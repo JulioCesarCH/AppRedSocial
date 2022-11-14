@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ActivityNoticias">
 
+    <include
+        android:id="@+id/includeUDH2"
+        layout="@layout/udhtoolbar"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNoticias"
+        android:layout_width="409dp"
+        android:layout_height="833dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeUDH2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
