@@ -12,6 +12,7 @@ import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +45,16 @@ public class ActivityChat extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
+
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String Contac=contactos.get(recyclerView.getChildAdapterPosition(view)).getNombres();
+                Intent intent = new Intent(ActivityChat.this, Chatpersonal.class);
+                intent.putExtra("Contac", Contac);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -69,4 +80,5 @@ public class ActivityChat extends AppCompatActivity {
         super.onActivityResult(requestCode,resultCode,data);
         Bitmap bitmap=(Bitmap)data.getExtras().get("data");
     }
+
 }
