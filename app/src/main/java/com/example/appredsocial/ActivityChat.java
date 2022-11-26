@@ -49,9 +49,11 @@ public class ActivityChat extends AppCompatActivity {
         adapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Contac=contactos.get(recyclerView.getChildAdapterPosition(view)).getNombres();
+                String Contac = contactos.get(recyclerView.getChildAdapterPosition(view)).getNombres();
+                Integer FotoContac = contactos.get(recyclerView.getChildAdapterPosition(view)).getImagen();
                 Intent intent = new Intent(ActivityChat.this, Chatpersonal.class);
                 intent.putExtra("Contac", Contac);
+                intent.putExtra("FotoContac", FotoContac);
                 startActivity(intent);
             }
         });

@@ -19,7 +19,6 @@ public class MensajesAdapter extends RecyclerView.Adapter<HolderMensajes> {
         this.c = c;
     }
     public void addMensaje(Mensajes m){
-
         listMensaje.add(m);
         notifyItemInserted(listMensaje.size());
     }
@@ -32,10 +31,8 @@ public class MensajesAdapter extends RecyclerView.Adapter<HolderMensajes> {
 
     @Override
     public void onBindViewHolder(HolderMensajes holder, int position) {
-        holder.getNombre().setText(listMensaje.get(position).getNombre());
         holder.getMensaje().setText(listMensaje.get(position).getMensaje());
         holder.getHora().setText(listMensaje.get(position).getHora());
-
     }
 
     @Override

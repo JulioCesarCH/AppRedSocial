@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="301dp"
-        android:layout_height="138dp"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
@@ -39,8 +39,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="295dp"
-        android:layout_height="169dp"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
@@ -65,25 +65,25 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="294dp"
-        android:layout_height="165dp"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChat"
-        app:srcCompat="@drawable/forum" />
+        app:srcCompat="@drawable/publicar" />
 
     <Button
-        android:id="@+id/btnForum"
+        android:id="@+id/btnPost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="@color/verde"
-        android:text="Forum"
+        android:text="Crear Publicación"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635522892216",
+    "project_id": "appredsocial-591d4",
+    "storage_bucket": "appredsocial-591d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635522892216:android:9bd7fb0bc18619d645cf4d",
+        "android_client_info": {
+          "package_name": "com.example.appredsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635522892216-qqmfghi0ia39p4klj2k13vk3pvjpb6sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB5zy4U2Zdga7hJgLJhPk6ygjglXxKYUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635522892216-qqmfghi0ia39p4klj2k13vk3pvjpb6sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

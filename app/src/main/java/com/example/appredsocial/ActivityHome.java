@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class ActivityHome extends AppCompatActivity {
     Button btnChat;
     Button btnNoticia;
+    Button btnPost;
     TextView TvUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class ActivityHome extends AppCompatActivity {
 
         btnChat = findViewById(R.id.btnChat);
         btnNoticia = findViewById(R.id.btnNoticia);
+        btnPost=findViewById(R.id.btnPost);
         TvUser= findViewById(R.id.tvLogin);
 
         Bundle usuario = getIntent().getExtras();
@@ -46,6 +48,14 @@ public class ActivityHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ActivityHome.this, ActivityNoticias.class);
+                intent.putExtra("User", User);
+                startActivity(intent);
+            }
+        });
+        btnPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityHome.this, Publicacion.class);
                 intent.putExtra("User", User);
                 startActivity(intent);
             }

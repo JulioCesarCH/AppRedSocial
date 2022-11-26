@@ -11,16 +11,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp">
-            <de.hdodenhof.circleimageview.CircleImageView
-               android:id="@+id/FotoPerfilMsj"
-                android:layout_width="24sp"
-                android:layout_height="24sp"
-                android:src="@mipmap/ic_launcher" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,10 +21,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/nombreMsj"
+                    android:id="@+id/mensajeMsj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="julio"
+                    android:text="Hola Bienvenido"
                     android:layout_weight="1"/>
                 <TextView
                     android:id="@+id/horaMsj"
@@ -42,11 +32,6 @@
                     android:layout_height="wrap_content"
                     android:text="00:00"/>
             </LinearLayout>
-        <TextView
-            android:id="@+id/mensajeMsj"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hola Bienvenido"/>
     </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
